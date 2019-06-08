@@ -1,7 +1,9 @@
 import React, { useRef } from "react";
 import styled from "styled-components";
 
+import { getAssetsPrefix } from "../shared/utils";
 import { useModalContext } from "./layout/modal";
+
 import { sendMail } from "../shared/api";
 
 import {
@@ -13,11 +15,13 @@ import {
 const Wrapper = styled.div`
   height: 650px;
   padding-top: 150px;
-  background: url(/static/images/cover.png) 80% 50px / contain no-repeat,
+  background: url(${getAssetsPrefix()}/static/images/cover.png) 80% 50px /
+      contain no-repeat,
     linear-gradient(to left, #e1ecf0, #eef2f3);
 
   @media (max-width: ${props => props.theme.breakpoints.md}) {
-    background: url(/static/images/cover.png) 150% 50px / contain no-repeat,
+    background: url(${getAssetsPrefix()}/static/images/cover.png) 150% 50px /
+        contain no-repeat,
       linear-gradient(to left, #e1ecf0, #eef2f3);
   }
 

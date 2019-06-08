@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import { getAssetsPrefix } from "../shared/utils";
+
 import {
   Section as BaseSection,
   Container,
@@ -40,7 +42,7 @@ const Continent = styled.a`
 
 const Img = styled.div`
   margin: 0 auto;
-  background-image: url("/static/images/continents.png");
+  background-image: url(${getAssetsPrefix()}/static/images/continents.png);
   transition: all 0.3s;
   background-size: cover;
 `;
@@ -48,20 +50,20 @@ const Img = styled.div`
 const EuropeImg = styled(Img)`
   width: 250px;
   height: 250px;
-  background-image: url("/static/images/europe-ready.png");
+  background-image: url(${getAssetsPrefix()}/static/images/europe-ready.png);
 `;
 
 const AsiaImg = styled(Img)`
   width: 300px;
   height: 250px;
-  background-image: url("/static/images/asia-ready.png");
+  background-image: url(${getAssetsPrefix()}/static/images/asia-ready.png);
   margin-left: 20px;
 `;
 
 const AustraliaImg = styled(Img)`
   width: 280px;
   height: 290px;
-  background-image: url("/static/images/australia-ready.png");
+  background-image: url(${getAssetsPrefix()}/static/images/australia-ready.png);
 `;
 
 const VisaMap = () => {

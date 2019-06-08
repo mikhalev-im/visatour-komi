@@ -1,14 +1,28 @@
 import React from "react";
 import styled from "styled-components";
+
+import { getAssetsPrefix } from "../shared/utils";
 import { Section, Container, Title as TitleBase } from "./styled";
 
 const items = [
-  { img: "/static/images/passport.jpg", caption: "Оформление виз" },
-  { img: "/static/images/bus-tour.jpg", caption: "Оформление туров" },
-  { img: "/static/images/aircraft.jpg", caption: "Авиабилеты" },
-  { img: "/static/images/hotel.jpg", caption: "Бронирование отелей" },
   {
-    img: "/static/images/insurance.jpg",
+    img: `${getAssetsPrefix()}/static/images/passport.jpg`,
+    caption: "Оформление виз"
+  },
+  {
+    img: `${getAssetsPrefix()}/static/images/bus-tour.jpg`,
+    caption: "Оформление туров"
+  },
+  {
+    img: `${getAssetsPrefix()}/static/images/aircraft.jpg`,
+    caption: "Авиабилеты"
+  },
+  {
+    img: `${getAssetsPrefix()}/static/images/hotel.jpg`,
+    caption: "Бронирование отелей"
+  },
+  {
+    img: `${getAssetsPrefix()}/static/images/insurance.jpg`,
     caption: "Страхование путешествинников"
   }
 ];

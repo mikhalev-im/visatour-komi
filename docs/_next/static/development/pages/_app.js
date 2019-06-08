@@ -511,16 +511,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _styled__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styled */ "./components/styled.js");
+/* harmony import */ var _shared_utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../shared/utils */ "./shared/utils.js");
+/* harmony import */ var _styled__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styled */ "./components/styled.js");
 var _jsxFileName = "F:\\web\\JS\\visa-sykt\\components\\layout\\footer.js";
 
 
 
-var Section = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(_styled__WEBPACK_IMPORTED_MODULE_2__["Section"]).withConfig({
+
+var Section = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(_styled__WEBPACK_IMPORTED_MODULE_3__["Section"]).withConfig({
   displayName: "footer__Section",
   componentId: "sc-17nhkos-0"
 })(["background:#141e30;background:linear-gradient(to left,#243b55,#141e30);"]);
-var Container = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(_styled__WEBPACK_IMPORTED_MODULE_2__["Container"]).withConfig({
+var Container = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(_styled__WEBPACK_IMPORTED_MODULE_3__["Container"]).withConfig({
   displayName: "footer__Container",
   componentId: "sc-17nhkos-1"
 })(["display:flex;justify-content:space-around;flex-wrap:wrap;@media (max-width:", "){flex-direction:column;align-items:center;}"], function (props) {
@@ -533,7 +535,7 @@ var Contacts = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.wit
 var SocialBtns = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "footer__SocialBtns",
   componentId: "sc-17nhkos-3"
-})(["margin-bottom:20px;margin-left:20px;margin-right:20px;a{display:block;background-size:cover;background-image:url(/static/images/logo.png);background-position:center;width:74px;height:100px;}"]);
+})(["margin-bottom:20px;margin-left:20px;margin-right:20px;a{display:block;background-size:cover;background-image:url(", "/static/images/logo.png);background-position:center;width:74px;height:100px;}"], Object(_shared_utils__WEBPACK_IMPORTED_MODULE_2__["getAssetsPrefix"])());
 var Map = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].iframe.withConfig({
   displayName: "footer__Map",
   componentId: "sc-17nhkos-4"
@@ -544,61 +546,61 @@ var Footer = function Footer() {
     height: "auto",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 57
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 58
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SocialBtns, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 59
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 60
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Contacts, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 62
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 63
     },
     __self: this
   }, "\u041D\u0430\u0448\u0438 \u043A\u043E\u043D\u0442\u0430\u043A\u0442\u044B:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 64
     },
     __self: this
   }, "\u0410\u0434\u0440\u0435\u0441: \u0433. \u0421\u044B\u043A\u0442\u044B\u0432\u043A\u0430\u0440, \u0443\u043B. \u041E\u0440\u0434\u0436\u043E\u043D\u0438\u043A\u0438\u0434\u0437\u0435 16"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 65
     },
     __self: this
   }, "\u0420\u0435\u0436\u0438\u043C \u0440\u0430\u0431\u043E\u0442\u044B: \u0441 10:00 \u0434\u043E 18:00"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 66
     },
     __self: this
   }, "\u0422\u0435\u043B\u0435\u0444\u043E\u043D: +79041020492"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 67
     },
     __self: this
   }, "\u042D\u043B\u0435\u043A\u0442\u0440\u043E\u043D\u043D\u0430\u044F \u043F\u043E\u0447\u0442\u0430: c1one@yandex.ru")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Map, {
@@ -608,7 +610,7 @@ var Footer = function Footer() {
     frameBorder: "0",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 69
     },
     __self: this
   })));
@@ -632,8 +634,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _app_bar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-bar */ "./components/layout/app-bar/index.js");
+/* harmony import */ var _shared_utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../shared/utils */ "./shared/utils.js");
+/* harmony import */ var _app_bar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app-bar */ "./components/layout/app-bar/index.js");
 var _jsxFileName = "F:\\web\\JS\\visa-sykt\\components\\layout\\header.js";
+
 
 
 
@@ -655,38 +659,38 @@ var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].header
 var Logo = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].a.withConfig({
   displayName: "header__Logo",
   componentId: "sc-1eqpxt8-2"
-})(["display:block;background-size:cover;background-image:url(/static/images/logo.jpg);background-position:center;width:96px;height:96px;"]);
+})(["display:block;background-size:cover;background-image:url(", "/static/images/logo.jpg);background-position:center;width:96px;height:96px;"], Object(_shared_utils__WEBPACK_IMPORTED_MODULE_3__["getAssetsPrefix"])());
 
 var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Wrapper, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 42
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 43
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 44
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Logo, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 45
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_bar__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_bar__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 47
     },
     __self: this
   })));
@@ -7471,6 +7475,33 @@ function () {
 
 Router.events = mitt_1.default();
 exports.default = Router;
+
+/***/ }),
+
+/***/ "./node_modules/next-server/dist/lib/runtime-config.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/next-server/dist/lib/runtime-config.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var runtimeConfig;
+
+exports.default = function () {
+  return runtimeConfig;
+};
+
+function setConfig(configValue) {
+  runtimeConfig = configValue;
+}
+
+exports.setConfig = setConfig;
 
 /***/ }),
 
@@ -27927,6 +27958,29 @@ function () {
     return _ref.apply(this, arguments);
   };
 }();
+
+/***/ }),
+
+/***/ "./shared/utils.js":
+/*!*************************!*\
+  !*** ./shared/utils.js ***!
+  \*************************/
+/*! exports provided: getAssetsPrefix */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getAssetsPrefix", function() { return getAssetsPrefix; });
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/config */ "./node_modules/next-server/dist/lib/runtime-config.js");
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_config__WEBPACK_IMPORTED_MODULE_0__);
+
+
+var _getConfig = next_config__WEBPACK_IMPORTED_MODULE_0___default()(),
+    publicRuntimeConfig = _getConfig.publicRuntimeConfig;
+
+var getAssetsPrefix = function getAssetsPrefix() {
+  return publicRuntimeConfig.assetPrefix;
+};
 
 /***/ }),
 

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+import { getAssetsPrefix } from "../../shared/utils";
 import { Container as BaseContainer, Section as BaseSection } from "../styled";
 
 const Section = styled(BaseSection)`
@@ -38,7 +39,7 @@ const SocialBtns = styled.div`
   a {
     display: block;
     background-size: cover;
-    background-image: url(/static/images/logo.png);
+    background-image: url(${getAssetsPrefix()}/static/images/logo.png);
     background-position: center;
     width: 74px;
     height: 100px;

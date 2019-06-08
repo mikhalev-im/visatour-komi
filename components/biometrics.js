@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 import { useModalContext } from "./layout/modal";
+import { getAssetsPrefix } from "../shared/utils";
+
 import Wave from "./wave";
 import { PulseBtn } from "./styled";
 
@@ -75,7 +77,9 @@ const Biometrics = () => {
   return (
     <Section>
       <TextSection>
-        <FingerPrintImg src="/static/images/fingerprint-1.png" />
+        <FingerPrintImg
+          src={`${getAssetsPrefix()}/static/images/fingerprint-1.png`}
+        />
         <WaveStyled />
         <TextWrapper>
           <Title>Мобильная биометрия в Сыктывкаре</Title>

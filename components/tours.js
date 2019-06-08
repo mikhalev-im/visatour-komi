@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
+import { getAssetsPrefix } from "../shared/utils";
 import { Section as BaseSection, Title as BaseTitle } from "./styled";
 
 const Section = styled(BaseSection)`
-  background-image: url("/static/images/switz.jpg");
+  background-image: url(${getAssetsPrefix()}/static/images/switz.jpg);
   background-size: cover;
   background-position: center;
   position: relative;

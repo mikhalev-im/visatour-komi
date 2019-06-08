@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
 
+import { getAssetsPrefix } from "../../shared/utils";
 import AppBar from "./app-bar";
 
 const Wrapper = styled.div`
@@ -30,7 +31,7 @@ const Container = styled.header`
 const Logo = styled.a`
   display: block;
   background-size: cover;
-  background-image: url(/static/images/logo.jpg);
+  background-image: url(${getAssetsPrefix()}/static/images/logo.jpg);
   background-position: center;
   width: 96px;
   height: 96px;

@@ -1,0 +1,25 @@
+{
+  "name": "visa-sykt",
+  "version": "0.0.1",
+  "description": "website for travel agency",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "c1one_38",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-icons": "^3.7.0",
+    "styled-components": "^4.2.0",
+    "styled-normalize": "^8.0.6",
+    "unfetch": "^4.1.0"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.10.0"
+  }
+}

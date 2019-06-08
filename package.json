@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "export": "cross-env NODE_ENV=production && npm run build && next export -o ./docs",
+    "postexport": "node postexport.js",
     "start": "next start"
   },
   "author": "c1one_38",
@@ -20,6 +22,7 @@
     "unfetch": "^4.1.0"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.10.0"
+    "babel-plugin-styled-components": "^1.10.0",
+    "cross-env": "^5.2.0"
   }
 }

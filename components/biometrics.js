@@ -75,7 +75,7 @@ const Biometrics = () => {
   const [_, setModalState] = useModalContext();
 
   return (
-    <Section>
+    <Section id="biometrics">
       <TextSection>
         <FingerPrintImg
           src={`${getAssetsPrefix()}/static/images/fingerprint-1.png`}
@@ -84,8 +84,8 @@ const Biometrics = () => {
         <TextWrapper>
           <Title>Мобильная биометрия в Сыктывкаре</Title>
           <ul>
-            <li>Финляндия: 26 мая</li>
-            <li>Испания: 26 мая</li>
+            <li>Финляндия, Чехия, Австрия, Литва: 16 июля</li>
+            <li>Испания: 18 июля</li>
           </ul>
           <PulseBtn onClick={() => setModalState("FORM")}>
             Оставить заявку

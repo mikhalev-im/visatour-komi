@@ -13,7 +13,9 @@ const DesktopMenu = ({ items }) => {
   return (
     <ListDesktop>
       {items.map(item => (
-        <Item key={item.title}>{item.title}</Item>
+        <Item key={item.title}>
+          <a href={item.link}>{item.title}</a>
+        </Item>
       ))}
     </ListDesktop>
   );

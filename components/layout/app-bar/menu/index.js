@@ -11,10 +11,10 @@ const Wrapper = styled.nav`
 `;
 
 const menu = [
-  { title: "Визы" },
-  { title: "Автобусные туры" },
-  { title: "Авиабилеты" },
-  { title: "Контакты" }
+  { title: "Визы", link: "#continents" },
+  { title: "Автобусные туры", link: "#continents" },
+  { title: "Авиабилеты", link: "#continents" },
+  { title: "Контакты", link: "#footer" }
 ];
 
 const Menu = () => {

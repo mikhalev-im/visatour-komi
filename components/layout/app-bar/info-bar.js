@@ -95,11 +95,11 @@ const InfoBar = () => {
     <Wrapper>
       <Address>
         <p>г. Сыктывкар, ул. Орджоникидзе 16</p>
-        <WorkingHours>По будням с 10:00 до 18:00</WorkingHours>
+        <WorkingHours>Пн - Пт: 10:00 - 18:00, Сб: 11:00 - 15:00</WorkingHours>
       </Address>
       <Contacts>
-        <a href="tel:+79041020492">
-          <FaPhoneVolume /> +7 (904) <b>102-04-92</b>
+        <a href="tel:+78212239305">
+          <FaPhoneVolume /> +7 (821) <b>223-93-05</b>
         </a>
       </Contacts>
       <Callback onClick={() => setModalState("FORM")}>

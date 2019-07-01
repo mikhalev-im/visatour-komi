@@ -40,6 +40,11 @@ const HiddenMenu = styled.div`
   padding-top: 10px;
   background-color: ${props => props.theme.colors.orange};
   box-shadow: -5px 0 5px rgba(69, 90, 100, 0.5);
+
+  a {
+    color: ${props => props.theme.colors.white};
+    text-decoration: none;
+  }
 `;
 
 const HiddenItem = styled.div`
@@ -53,12 +58,16 @@ const MobileMenu = ({ items }) => {
 
   return (
     <ListMobile>
-      <Item>{first.title}</Item>
+      <Item>
+        <a href={first.link}>{first.title}</a>
+      </Item>
       <MenuBtn ref={ref}>
         <FaBars onClick={() => setIsVisible(value => !value)} />
         <HiddenMenu style={{ width: isVisible ? "200px" : "0" }}>
           {rest.map(item => (
-            <HiddenItem key={item.title}>{item.title}</HiddenItem>
+            <HiddenItem key={item.title}>
+              <a href={item.link}>{item.title}</a>
+            </HiddenItem>
           ))}
         </HiddenMenu>
       </MenuBtn>

@@ -138,14 +138,14 @@ var InfoBar = function InfoBar() {
       lineNumber: 98
     },
     __self: this
-  }, "\u041F\u043E \u0431\u0443\u0434\u043D\u044F\u043C \u0441 10:00 \u0434\u043E 18:00")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Contacts, {
+  }, "\u041F\u043D - \u041F\u0442: 10:00 - 18:00, \u0421\u0431: 11:00 - 15:00")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Contacts, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 100
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-    href: "tel:+79041020492",
+    href: "tel:+78212239305",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 101
@@ -157,13 +157,13 @@ var InfoBar = function InfoBar() {
       lineNumber: 102
     },
     __self: this
-  }), " +7 (904) ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("b", {
+  }), " +7 (821) ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("b", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 102
     },
     __self: this
-  }, "102-04-92"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Callback, {
+  }, "223-93-05"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Callback, {
     onClick: function onClick() {
       return setModalState("FORM");
     },
@@ -237,7 +237,14 @@ var DesktopMenu = function DesktopMenu(_ref) {
         lineNumber: 16
       },
       __self: this
-    }, item.title);
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: item.link,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      },
+      __self: this
+    }, item.title));
   }));
 };
 
@@ -318,13 +325,17 @@ var Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].nav.with
   return props.theme.colors.white;
 });
 var menu = [{
-  title: "Визы"
+  title: "Визы",
+  link: "#continents"
 }, {
-  title: "Автобусные туры"
+  title: "Автобусные туры",
+  link: "#continents"
 }, {
-  title: "Авиабилеты"
+  title: "Авиабилеты",
+  link: "#continents"
 }, {
-  title: "Контакты"
+  title: "Контакты",
+  link: "#footer"
 }];
 
 var Menu = function Menu() {
@@ -397,8 +408,10 @@ var MenuBtn = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].li.withC
 var HiddenMenu = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "mobile__HiddenMenu",
   componentId: "sc-1ogul98-2"
-})(["position:fixed;width:200px;top:0;right:0;height:100%;transition:0.5s;padding-top:10px;background-color:", ";box-shadow:-5px 0 5px rgba(69,90,100,0.5);"], function (props) {
+})(["position:fixed;width:200px;top:0;right:0;height:100%;transition:0.5s;padding-top:10px;background-color:", ";box-shadow:-5px 0 5px rgba(69,90,100,0.5);a{color:", ";text-decoration:none;}"], function (props) {
   return props.theme.colors.orange;
+}, function (props) {
+  return props.theme.colors.white;
 });
 var HiddenItem = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "mobile__HiddenItem",
@@ -420,20 +433,27 @@ var MobileMenu = function MobileMenu(_ref) {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ListMobile, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 60
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared__WEBPACK_IMPORTED_MODULE_4__["Item"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 61
     },
     __self: this
-  }, first.title), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MenuBtn, {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: first.link,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62
+    },
+    __self: this
+  }, first.title)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MenuBtn, {
     ref: ref,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 64
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_3__["FaBars"], {
@@ -444,7 +464,7 @@ var MobileMenu = function MobileMenu(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 65
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(HiddenMenu, {
@@ -453,7 +473,7 @@ var MobileMenu = function MobileMenu(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 66
     },
     __self: this
   }, rest.map(function (item) {
@@ -461,10 +481,17 @@ var MobileMenu = function MobileMenu(_ref) {
       key: item.title,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 61
+        lineNumber: 68
       },
       __self: this
-    }, item.title);
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+      href: item.link,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 69
+      },
+      __self: this
+    }, item.title));
   }))));
 };
 
@@ -495,7 +522,9 @@ var List = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].ul.withConf
 var Item = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].li.withConfig({
   displayName: "shared__Item",
   componentId: "sc-18ldjbv-1"
-})(["line-height:48px;text-transform:uppercase;padding:0 40px;text-align:center;"]);
+})(["line-height:48px;text-transform:uppercase;padding:0 40px;text-align:center;a{color:", ";text-decoration:none;}"], function (props) {
+  return props.theme.colors.white;
+});
 
 /***/ }),
 
@@ -544,6 +573,7 @@ var Map = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].iframe.withC
 var Footer = function Footer() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Section, {
     height: "auto",
+    id: "footer",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 57
@@ -591,26 +621,38 @@ var Footer = function Footer() {
       lineNumber: 65
     },
     __self: this
-  }, "\u0420\u0435\u0436\u0438\u043C \u0440\u0430\u0431\u043E\u0442\u044B: \u0441 10:00 \u0434\u043E 18:00"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66
-    },
-    __self: this
-  }, "\u0422\u0435\u043B\u0435\u0444\u043E\u043D: +79041020492"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "\u0420\u0435\u0436\u0438\u043C \u0440\u0430\u0431\u043E\u0442\u044B:", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 67
     },
     __self: this
-  }, "\u042D\u043B\u0435\u043A\u0442\u0440\u043E\u043D\u043D\u0430\u044F \u043F\u043E\u0447\u0442\u0430: c1one@yandex.ru")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Map, {
+  }), "\u041F\u043D - \u041F\u0442: 10:00 - 18:00", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69
+    },
+    __self: this
+  }), "\u0421\u0431: 11:00 - 15:00"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72
+    },
+    __self: this
+  }, "\u0422\u0435\u043B\u0435\u0444\u043E\u043D: +7 (8212) 23-93-05"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73
+    },
+    __self: this
+  }, "\u042D\u043B\u0435\u043A\u0442\u0440\u043E\u043D\u043D\u0430\u044F \u043F\u043E\u0447\u0442\u0430: info@visatour-komi.ru")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Map, {
     src: "https://yandex.ru/map-widget/v1/?um=constructor%3Acbf9d71c7e0c8772032d5f972f82b9e7da2021226e580d9635e5589b58b677ab&source=constructor",
     width: "320",
     height: "300",
     frameBorder: "0",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 75
     },
     __self: this
   })));
@@ -27941,10 +27983,8 @@ function () {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            console.log("NEW API REQUEST!");
-            console.log("PHONE: ".concat(phone, ", NAME: ").concat(name)); // await fetch(
-            //   `https://eu-gb.functions.cloud.ibm.com/api/v1/web/c1one@yandex.ru_dev/visatour-komi/mail.json?phone=${phone}&name=${name}`
-            // );
+            _context.next = 2;
+            return Object(unfetch__WEBPACK_IMPORTED_MODULE_2__["default"])("https://eu-gb.functions.cloud.ibm.com/api/v1/web/c1one@yandex.ru_dev/visatour-komi/mail.json?phone=".concat(phone, "&name=").concat(name));
 
           case 2:
           case "end":

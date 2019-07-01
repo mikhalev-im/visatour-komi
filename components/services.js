@@ -62,7 +62,7 @@ const Img = styled.div`
 
 const Services = () => {
   return (
-    <Section height="auto">
+    <Section height="auto" id="services">
       <Container>
         <Title>Наши услуги</Title>
         <List>

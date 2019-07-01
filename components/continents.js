@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+import { useModalContext } from "./layout/modal";
 import { getAssetsPrefix } from "../shared/utils";
 
 import {
@@ -67,20 +68,24 @@ const AustraliaImg = styled(Img)`
 `;
 
 const VisaMap = () => {
+  const [_, setModalState] = useModalContext();
+
+  const handleClick = () => setModalState("FORM");
+
   return (
-    <Section height="auto">
+    <Section height="auto" id="continents">
       <Container>
         <Title>Куда поедем?</Title>
         <Wrapper>
-          <Continent>
+          <Continent onClick={handleClick}>
             <p>Европа</p>
             <EuropeImg />
           </Continent>
-          <Continent>
+          <Continent onClick={handleClick}>
             <p>Азия</p>
             <AsiaImg />
           </Continent>
-          <Continent>
+          <Continent onClick={handleClick}>
             <p>Австралия</p>
             <AustraliaImg />
           </Continent>

@@ -54,7 +54,7 @@ const Map = styled.iframe`
 
 const Footer = () => {
   return (
-    <Section height="auto">
+    <Section height="auto" id="footer">
       <Container>
         <SocialBtns>
           <a />
@@ -62,9 +62,15 @@ const Footer = () => {
         <Contacts>
           <h3>Наши контакты:</h3>
           <p>Адрес: г. Сыктывкар, ул. Орджоникидзе 16</p>
-          <p>Режим работы: с 10:00 до 18:00</p>
-          <p>Телефон: +79041020492</p>
-          <p>Электронная почта: c1one@yandex.ru</p>
+          <p>
+            Режим работы:
+            <br />
+            Пн - Пт: 10:00 - 18:00
+            <br />
+            Сб: 11:00 - 15:00
+          </p>
+          <p>Телефон: +7 (8212) 23-93-05</p>
+          <p>Электронная почта: info@visatour-komi.ru</p>
         </Contacts>
         <Map
           src="https://yandex.ru/map-widget/v1/?um=constructor%3Acbf9d71c7e0c8772032d5f972f82b9e7da2021226e580d9635e5589b58b677ab&amp;source=constructor"

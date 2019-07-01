@@ -17,16 +17,16 @@ const Wrapper = styled.div`
   padding-top: 150px;
   background: url(${getAssetsPrefix()}/static/images/cover.png) 80% 50px /
       contain no-repeat,
-    linear-gradient(to left, #e1ecf0, #eef2f3);
+    linear-gradient(to right, #64acb7, #58bdd9);
 
   @media (max-width: ${props => props.theme.breakpoints.md}) {
     background: url(${getAssetsPrefix()}/static/images/cover.png) 150% 50px /
         contain no-repeat,
-      linear-gradient(to left, #e1ecf0, #eef2f3);
+      linear-gradient(to right, #64acb7, #58bdd9);
   }
 
   @media (max-width: ${props => props.theme.breakpoints.sm}) {
-    background: linear-gradient(to left, #e1ecf0, #eef2f3);
+    background: linear-gradient(to right, #64acb7, #58bdd9);
     height: auto;
     padding: 50px 0;
   }
@@ -43,6 +43,8 @@ const Container = styled(BaseContainer)`
 `;
 
 const Title = styled(BaseTitle)`
+  color: ${props => props.theme.colors.white};
+
   @media (min-width: ${props => props.theme.breakpoints.sm}) {
     text-align: left;
   }

@@ -42,7 +42,7 @@ const Text = styled.p`
 
 const Advantages = () => {
   return (
-    <Section height="auto">
+    <Section height="auto" id="advantages">
       <Container>
         <Title>Ищете надежный визовый центр в Сыктывкаре?</Title>
         <SubTitle>Обращайтесь – мы всегда готовы оказать помощь!</SubTitle>

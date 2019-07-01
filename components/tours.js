@@ -33,8 +33,8 @@ const Title = styled(BaseTitle)`
 
 const Tours = () => {
   return (
-    <Section>
-      <Title>Автобусные туры</Title>
+    <Section id="tours">
+      <Title>Автобусные и авиатуры</Title>
       <Overlay />
     </Section>
   );

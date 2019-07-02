@@ -4,6 +4,7 @@ import Head from "next/head";
 import { ThemeProvider, createGlobalStyle } from "styled-components";
 import { normalize } from "styled-normalize";
 
+import { getAssetsPrefix } from "../shared/utils";
 import Layout from "../components/layout";
 
 const theme = {
@@ -43,6 +44,17 @@ class MyApp extends App {
       <Container>
         <Head>
           <meta name="viewport" content="width=device-width" />
+          <title>Визово-туристический центр</title>
+          <meta
+            name="description"
+            content="Оформим визу в любую страну в г.Сыктывкар, ул. Орджоникидзе д. 16, телефон +7 (8212) 23-93-05"
+          />
+          <meta name="keywords" content="визы, получить визу, визы быстро" />
+          <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href={`${getAssetsPrefix()}/static/images/favicon.ico`}
+          />
         </Head>
         <GlobalStyle />
         <ThemeProvider theme={theme}>

@@ -27838,7 +27838,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var styled_normalize__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! styled-normalize */ "./node_modules/styled-normalize/dist/index.js");
 /* harmony import */ var styled_normalize__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(styled_normalize__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/layout */ "./components/layout/index.js");
+/* harmony import */ var _shared_utils__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../shared/utils */ "./shared/utils.js");
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/layout */ "./components/layout/index.js");
 
 
 
@@ -27857,6 +27858,7 @@ function _templateObject() {
 
   return data;
 }
+
 
 
 
@@ -27903,13 +27905,13 @@ function (_App) {
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_8__["Container"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 44
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_9___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 45
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("meta", {
@@ -27917,32 +27919,63 @@ function (_App) {
         content: "width=device-width",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 46
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("title", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47
+        },
+        __self: this
+      }, "\u0412\u0438\u0437\u043E\u0432\u043E-\u0442\u0443\u0440\u0438\u0441\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0446\u0435\u043D\u0442\u0440"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("meta", {
+        name: "description",
+        content: "\u041E\u0444\u043E\u0440\u043C\u0438\u043C \u0432\u0438\u0437\u0443 \u0432 \u043B\u044E\u0431\u0443\u044E \u0441\u0442\u0440\u0430\u043D\u0443 \u0432 \u0433.\u0421\u044B\u043A\u0442\u044B\u0432\u043A\u0430\u0440, \u0443\u043B. \u041E\u0440\u0434\u0436\u043E\u043D\u0438\u043A\u0438\u0434\u0437\u0435 \u0434. 16, \u0442\u0435\u043B\u0435\u0444\u043E\u043D +7 (8212) 23-93-05",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("meta", {
+        name: "keywords",
+        content: "\u0432\u0438\u0437\u044B, \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u0432\u0438\u0437\u0443, \u0432\u0438\u0437\u044B \u0431\u044B\u0441\u0442\u0440\u043E",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 52
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("link", {
+        rel: "shortcut icon",
+        type: "image/x-icon",
+        href: "".concat(Object(_shared_utils__WEBPACK_IMPORTED_MODULE_12__["getAssetsPrefix"])(), "/static/images/favicon.ico"),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 53
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(GlobalStyle, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 59
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(styled_components__WEBPACK_IMPORTED_MODULE_10__["ThemeProvider"], {
         theme: theme,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 60
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_12__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_13__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 61
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 62
         },
         __self: this
       })))));

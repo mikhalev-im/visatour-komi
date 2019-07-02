@@ -6,24 +6,24 @@ import { Section, Container, Title as TitleBase } from "./styled";
 
 const items = [
   {
-    img: `${getAssetsPrefix()}/static/images/passport.jpg`,
-    caption: "Оформление виз"
+    caption: "Оформление виз",
+    bgPosition: "0 0"
   },
   {
-    img: `${getAssetsPrefix()}/static/images/bus-tour.jpg`,
-    caption: "Оформление туров"
+    caption: "Оформление туров",
+    bgPosition: "-155px 0"
   },
   {
-    img: `${getAssetsPrefix()}/static/images/aircraft.jpg`,
-    caption: "Авиабилеты"
+    caption: "Авиабилеты",
+    bgPosition: "-305px 0"
   },
   {
-    img: `${getAssetsPrefix()}/static/images/hotel.jpg`,
-    caption: "Бронирование отелей"
+    caption: "Бронирование отелей",
+    bgPosition: "-455px 0"
   },
   {
-    img: `${getAssetsPrefix()}/static/images/insurance.jpg`,
-    caption: "Страхование путешествинников"
+    caption: "Страхование путешествинников",
+    bgPosition: "-605px 0"
   }
 ];
 
@@ -56,8 +56,10 @@ const Img = styled.div`
   width: 150px;
   height: 150px;
   border-radius: 100px;
-  background-size: cover;
-  background-image: url(${props => props.img});
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: ${props => props.bgPosition};
+  background-image: url(${getAssetsPrefix()}/static/images/services.png);
 `;
 
 const Services = () => {
@@ -68,7 +70,7 @@ const Services = () => {
         <List>
           {items.map(item => (
             <Item key={item.caption}>
-              <Img img={item.img} />
+              <Img bgPosition={item.bgPosition} />
               <p>{item.caption}</p>
             </Item>
           ))}

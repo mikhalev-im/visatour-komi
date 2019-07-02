@@ -44,27 +44,28 @@ const Continent = styled.a`
 const Img = styled.div`
   margin: 0 auto;
   background-image: url(${getAssetsPrefix()}/static/images/continents.png);
+  background-repeat: no-repeat;
+  background-size: auto;
   transition: all 0.3s;
-  background-size: cover;
 `;
 
 const EuropeImg = styled(Img)`
   width: 250px;
   height: 250px;
-  background-image: url(${getAssetsPrefix()}/static/images/europe-ready.png);
+  background-position: 0px 0px;
 `;
 
 const AsiaImg = styled(Img)`
   width: 300px;
   height: 250px;
-  background-image: url(${getAssetsPrefix()}/static/images/asia-ready.png);
   margin-left: 20px;
+  background-position: -260px 10px;
 `;
 
 const AustraliaImg = styled(Img)`
   width: 280px;
   height: 290px;
-  background-image: url(${getAssetsPrefix()}/static/images/australia-ready.png);
+  background-position: -560px 10px;
 `;
 
 const VisaMap = () => {

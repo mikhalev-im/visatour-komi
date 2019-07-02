@@ -200,7 +200,7 @@ var Biometrics = function Biometrics() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(FingerPrintImg, {
-    src: "".concat(Object(_shared_utils__WEBPACK_IMPORTED_MODULE_4__["getAssetsPrefix"])(), "/static/images/fingerprint-1.png"),
+    src: "".concat(Object(_shared_utils__WEBPACK_IMPORTED_MODULE_4__["getAssetsPrefix"])(), "/static/images/fingerprint.png"),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 80
@@ -302,19 +302,19 @@ var Continent = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].a.with
 var Img = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "continents__Img",
   componentId: "mu4rdf-4"
-})(["margin:0 auto;background-image:url(", "/static/images/continents.png);transition:all 0.3s;background-size:cover;"], Object(_shared_utils__WEBPACK_IMPORTED_MODULE_4__["getAssetsPrefix"])());
+})(["margin:0 auto;background-image:url(", "/static/images/continents.png);background-repeat:no-repeat;background-size:auto;transition:all 0.3s;"], Object(_shared_utils__WEBPACK_IMPORTED_MODULE_4__["getAssetsPrefix"])());
 var EuropeImg = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["default"])(Img).withConfig({
   displayName: "continents__EuropeImg",
   componentId: "mu4rdf-5"
-})(["width:250px;height:250px;background-image:url(", "/static/images/europe-ready.png);"], Object(_shared_utils__WEBPACK_IMPORTED_MODULE_4__["getAssetsPrefix"])());
+})(["width:250px;height:250px;background-position:0px 0px;"]);
 var AsiaImg = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["default"])(Img).withConfig({
   displayName: "continents__AsiaImg",
   componentId: "mu4rdf-6"
-})(["width:300px;height:250px;background-image:url(", "/static/images/asia-ready.png);margin-left:20px;"], Object(_shared_utils__WEBPACK_IMPORTED_MODULE_4__["getAssetsPrefix"])());
+})(["width:300px;height:250px;margin-left:20px;background-position:-260px 10px;"]);
 var AustraliaImg = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["default"])(Img).withConfig({
   displayName: "continents__AustraliaImg",
   componentId: "mu4rdf-7"
-})(["width:280px;height:290px;background-image:url(", "/static/images/australia-ready.png);"], Object(_shared_utils__WEBPACK_IMPORTED_MODULE_4__["getAssetsPrefix"])());
+})(["width:280px;height:290px;background-position:-560px 10px;"]);
 
 var VisaMap = function VisaMap() {
   var _useModalContext = Object(_layout_modal__WEBPACK_IMPORTED_MODULE_3__["useModalContext"])(),
@@ -331,88 +331,88 @@ var VisaMap = function VisaMap() {
     id: "continents",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 77
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styled__WEBPACK_IMPORTED_MODULE_5__["Container"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 78
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Title, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 79
     },
     __self: this
   }, "\u041A\u0443\u0434\u0430 \u043F\u043E\u0435\u0434\u0435\u043C?"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Wrapper, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79
+      lineNumber: 80
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Continent, {
     onClick: handleClick,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 81
     },
     __self: this
-  }, "\u0415\u0432\u0440\u043E\u043F\u0430"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(EuropeImg, {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 82
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Continent, {
-    onClick: handleClick,
+  }, "\u0415\u0432\u0440\u043E\u043F\u0430"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(EuropeImg, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84
+      lineNumber: 83
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Continent, {
+    onClick: handleClick,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 85
     },
     __self: this
-  }, "\u0410\u0437\u0438\u044F"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(AsiaImg, {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 86
+    },
+    __self: this
+  }, "\u0410\u0437\u0438\u044F"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(AsiaImg, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 87
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Continent, {
     onClick: handleClick,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 89
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 90
     },
     __self: this
   }, "\u0410\u0432\u0441\u0442\u0440\u0430\u043B\u0438\u044F"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(AustraliaImg, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90
+      lineNumber: 91
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93
+      lineNumber: 94
     },
     __self: this
   }, "\u0412\u044B\u0431\u0435\u0440\u0438\u0442\u0435 \u043A\u043E\u043D\u0442\u0438\u043D\u0435\u0442 \u0434\u043B\u044F \u0431\u043E\u043B\u0435\u0435 \u043F\u043E\u0434\u0440\u043E\u0431\u043D\u043E\u0439 \u0438\u043D\u0444\u043E\u043C\u0440\u0430\u0446\u0438\u0438")));
@@ -870,20 +870,20 @@ var _jsxFileName = "F:\\web\\JS\\visa-sykt\\components\\services.js";
 
 
 var items = [{
-  img: "".concat(Object(_shared_utils__WEBPACK_IMPORTED_MODULE_2__["getAssetsPrefix"])(), "/static/images/passport.jpg"),
-  caption: "Оформление виз"
+  caption: "Оформление виз",
+  bgPosition: "0 0"
 }, {
-  img: "".concat(Object(_shared_utils__WEBPACK_IMPORTED_MODULE_2__["getAssetsPrefix"])(), "/static/images/bus-tour.jpg"),
-  caption: "Оформление туров"
+  caption: "Оформление туров",
+  bgPosition: "-155px 0"
 }, {
-  img: "".concat(Object(_shared_utils__WEBPACK_IMPORTED_MODULE_2__["getAssetsPrefix"])(), "/static/images/aircraft.jpg"),
-  caption: "Авиабилеты"
+  caption: "Авиабилеты",
+  bgPosition: "-305px 0"
 }, {
-  img: "".concat(Object(_shared_utils__WEBPACK_IMPORTED_MODULE_2__["getAssetsPrefix"])(), "/static/images/hotel.jpg"),
-  caption: "Бронирование отелей"
+  caption: "Бронирование отелей",
+  bgPosition: "-455px 0"
 }, {
-  img: "".concat(Object(_shared_utils__WEBPACK_IMPORTED_MODULE_2__["getAssetsPrefix"])(), "/static/images/insurance.jpg"),
-  caption: "Страхование путешествинников"
+  caption: "Страхование путешествинников",
+  bgPosition: "-605px 0"
 }];
 var Title = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(_styled__WEBPACK_IMPORTED_MODULE_3__["Title"]).withConfig({
   displayName: "services__Title",
@@ -900,9 +900,9 @@ var Item = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].li.withConf
 var Img = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "services__Img",
   componentId: "ddmf7w-3"
-})(["margin:0 auto;width:150px;height:150px;border-radius:100px;background-size:cover;background-image:url(", ");"], function (props) {
-  return props.img;
-});
+})(["margin:0 auto;width:150px;height:150px;border-radius:100px;background-size:auto;background-repeat:no-repeat;background-position:", ";background-image:url(", "/static/images/services.png);"], function (props) {
+  return props.bgPosition;
+}, Object(_shared_utils__WEBPACK_IMPORTED_MODULE_2__["getAssetsPrefix"])());
 
 var Services = function Services() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styled__WEBPACK_IMPORTED_MODULE_3__["Section"], {
@@ -910,25 +910,25 @@ var Services = function Services() {
     id: "services",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 67
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styled__WEBPACK_IMPORTED_MODULE_3__["Container"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 68
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Title, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 69
     },
     __self: this
   }, "\u041D\u0430\u0448\u0438 \u0443\u0441\u043B\u0443\u0433\u0438"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(List, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 70
     },
     __self: this
   }, items.map(function (item) {
@@ -936,20 +936,20 @@ var Services = function Services() {
       key: item.caption,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 70
+        lineNumber: 72
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Img, {
-      img: item.img,
+      bgPosition: item.bgPosition,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 71
+        lineNumber: 73
       },
       __self: this
     }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 72
+        lineNumber: 74
       },
       __self: this
     }, item.caption));

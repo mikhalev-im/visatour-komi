@@ -78,7 +78,7 @@ const Biometrics = () => {
     <Section id="biometrics">
       <TextSection>
         <FingerPrintImg
-          src={`${getAssetsPrefix()}/static/images/fingerprint-1.png`}
+          src={`${getAssetsPrefix()}/static/images/fingerprint.png`}
         />
         <WaveStyled />
         <TextWrapper>

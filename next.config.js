@@ -1,5 +1,5 @@
-const ASSET_PREFIX =
-  process.env.NODE_ENV === "production" ? "/visatour-komi" : "";
+// is needed for git hub pages hosting
+const ASSET_PREFIX = process.env.NODE_ENV === "production" ? "" : "";
 
 module.exports = {
   assetPrefix: ASSET_PREFIX,

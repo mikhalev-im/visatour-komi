@@ -7,6 +7,21 @@ import { getAssetsPrefix } from "../shared/utils";
 import Wave from "./wave";
 import { PulseBtn } from "./styled";
 
+const dates = [
+  {
+    countries: ["Финляндия", "Чехия", "Литва", "Словения", "Дания", "Исландия"],
+    dates: ["22 июля", "15 августа"]
+  },
+  {
+    countries: ["Испания"],
+    dates: ["29 июля"]
+  },
+  {
+    countries: ["Латвия", "Венгрия"],
+    dates: ["в любой будний день!"]
+  }
+];
+
 const Section = styled.div`
   height: 500px;
   display: flex;
@@ -58,6 +73,8 @@ const TextWrapper = styled.div`
 const Title = styled.h2`
   font-size: 40px;
   max-width: 400px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
   @media (max-width: ${props => props.theme.breakpoints.sm}) {
     margin: 0 auto;
@@ -69,6 +86,17 @@ const FingerPrintImg = styled.img`
   position: absolute;
   right: 125%;
   top: 75px;
+`;
+
+const List = styled.ul`
+  @media (max-width: ${props => props.theme.breakpoints.sm}) {
+    padding: 0;
+    list-style: none;
+  }
+`;
+
+const ListItem = styled.li`
+  margin-bottom: 10px;
 `;
 
 const Biometrics = () => {
@@ -83,10 +111,15 @@ const Biometrics = () => {
         <WaveStyled />
         <TextWrapper>
           <Title>Мобильная биометрия в Сыктывкаре</Title>
-          <ul>
-            <li>Финляндия, Чехия, Австрия, Литва: 16 июля</li>
-            <li>Испания: 18 июля</li>
-          </ul>
+          <List>
+            {dates.map(item => (
+              <ListItem key={item.countries.join()}>
+                <b>{item.countries.join(", ")}:</b>
+                <br />
+                {item.dates.join(", ")}
+              </ListItem>
+            ))}
+          </List>
           <PulseBtn onClick={() => setModalState("FORM")}>
             Оставить заявку
           </PulseBtn>

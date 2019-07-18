@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
+import { useModalContext } from "./layout/modal";
 import { getAssetsPrefix } from "../shared/utils";
-import { Section as BaseSection, Title as BaseTitle } from "./styled";
+import { Section as BaseSection, Title as BaseTitle, PulseBtn } from "./styled";
 
 const Section = styled(BaseSection)`
   background-image: url(${getAssetsPrefix()}/static/images/switz.jpg);
@@ -25,16 +26,27 @@ const Overlay = styled.div`
 const Title = styled(BaseTitle)`
   position: absolute;
   z-index: 5;
-  top: 150px;
+  top: 130px;
 
   left: 50%;
   transform: translateX(-50%);
 `;
 
+const Button = styled(PulseBtn)`
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 300px;
+`;
+
 const Tours = () => {
+  const [_, setModalState] = useModalContext();
+
   return (
     <Section id="tours">
       <Title>Автобусные и авиатуры</Title>
+      <Button onClick={() => setModalState("FORM")}>Оставить заявку</Button>
       <Overlay />
     </Section>
   );

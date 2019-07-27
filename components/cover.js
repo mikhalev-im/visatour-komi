@@ -17,16 +17,16 @@ const Wrapper = styled.div`
   padding-top: 150px;
   background: url(${getAssetsPrefix()}/static/images/cover.png) 80% 50px /
       contain no-repeat,
-    linear-gradient(to right, #64acb7, #58bdd9);
+    linear-gradient(to right, #64acb7, #68c6e0);
 
   @media (max-width: ${props => props.theme.breakpoints.md}) {
     background: url(${getAssetsPrefix()}/static/images/cover.png) 150% 50px /
         contain no-repeat,
-      linear-gradient(to right, #64acb7, #58bdd9);
+      linear-gradient(to right, #64acb7, #68c6e0);
   }
 
   @media (max-width: ${props => props.theme.breakpoints.sm}) {
-    background: linear-gradient(to right, #64acb7, #58bdd9);
+    background: linear-gradient(to right, #64acb7, #68c6e0);
     height: auto;
     padding: 50px 0;
   }

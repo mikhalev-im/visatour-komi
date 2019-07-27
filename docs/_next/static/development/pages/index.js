@@ -479,7 +479,7 @@ var _jsxFileName = "F:\\web\\JS\\visa-sykt\\components\\cover.js";
 var Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "cover__Wrapper",
   componentId: "sc-7fa62t-0"
-})(["height:650px;padding-top:150px;background:url(", "/static/images/cover.png) 80% 50px / contain no-repeat,linear-gradient(to right,#64acb7,#58bdd9);@media (max-width:", "){background:url(", "/static/images/cover.png) 150% 50px / contain no-repeat,linear-gradient(to right,#64acb7,#58bdd9);}@media (max-width:", "){background:linear-gradient(to right,#64acb7,#58bdd9);height:auto;padding:50px 0;}"], Object(_shared_utils__WEBPACK_IMPORTED_MODULE_3__["getAssetsPrefix"])(), function (props) {
+})(["height:650px;padding-top:150px;background:url(", "/static/images/cover.png) 80% 50px / contain no-repeat,linear-gradient(to right,#64acb7,#68c6e0);@media (max-width:", "){background:url(", "/static/images/cover.png) 150% 50px / contain no-repeat,linear-gradient(to right,#64acb7,#68c6e0);}@media (max-width:", "){background:linear-gradient(to right,#64acb7,#68c6e0);height:auto;padding:50px 0;}"], Object(_shared_utils__WEBPACK_IMPORTED_MODULE_3__["getAssetsPrefix"])(), function (props) {
   return props.theme.breakpoints.md;
 }, Object(_shared_utils__WEBPACK_IMPORTED_MODULE_3__["getAssetsPrefix"])(), function (props) {
   return props.theme.breakpoints.sm;

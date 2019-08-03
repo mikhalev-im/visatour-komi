@@ -28238,9 +28238,9 @@ function (_App) {
           lineNumber: 47
         },
         __self: this
-      }, "\u0412\u0438\u0437\u043E\u0432\u043E-\u0442\u0443\u0440\u0438\u0441\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0446\u0435\u043D\u0442\u0440"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("meta", {
+      }, "\u0412\u0438\u0437\u043E\u0432\u044B\u0439 \u0442\u0443\u0440\u0438\u0441\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0446\u0435\u043D\u0442\u0440"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("meta", {
         name: "description",
-        content: "\u041E\u0444\u043E\u0440\u043C\u0438\u043C \u0432\u0438\u0437\u0443 \u0432 \u043B\u044E\u0431\u0443\u044E \u0441\u0442\u0440\u0430\u043D\u0443 \u0432 \u0433.\u0421\u044B\u043A\u0442\u044B\u0432\u043A\u0430\u0440, \u0443\u043B. \u041E\u0440\u0434\u0436\u043E\u043D\u0438\u043A\u0438\u0434\u0437\u0435 \u0434. 16, \u0442\u0435\u043B\u0435\u0444\u043E\u043D +7 (8212) 23-93-05",
+        content: "\u041F\u043E\u043C\u043E\u0436\u0435\u043C \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u0432\u0438\u0437\u0443 \u0448\u0435\u043D\u0433\u0435\u043D \u0438 \u0432 \u0434\u0440\u0443\u0433\u0438\u0435 \u0441\u0442\u0440\u0430\u043D\u044B. \u0417\u0430\u043F\u0438\u0441\u044C \u043D\u0430 \u043C\u043E\u0431\u0438\u043B\u044C\u043D\u0443\u044E \u0431\u0438\u043E\u043C\u0435\u0442\u0440\u0438\u044E \u0438\u043B\u0438 \u043E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u0435 \u0431\u0435\u0437 \u043B\u0438\u0447\u043D\u043E\u0433\u043E \u043F\u0440\u0438\u0441\u0443\u0442\u0441\u0442\u0432\u0438\u044F. \u041C\u0438\u043D\u0438\u043C\u0443\u043C \u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u043E\u0432! \u0422\u0443\u0440\u044B \u0438 \u0430\u0432\u0438\u0430\u0431\u0438\u043B\u0435\u0442\u044B. \u0421\u0442\u0440\u0430\u0445\u043E\u0432\u0430\u043D\u0438\u0435. \u0424\u043E\u0442\u043E \u043D\u0430 \u0432\u0438\u0437\u0443 \u0432 \u043F\u043E\u0434\u0430\u0440\u043E\u043A.",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 48
@@ -28248,7 +28248,7 @@ function (_App) {
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("meta", {
         name: "keywords",
-        content: "\u0432\u0438\u0437\u044B, \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u0432\u0438\u0437\u0443, \u0432\u0438\u0437\u044B \u0431\u044B\u0441\u0442\u0440\u043E",
+        content: "\u0432\u0438\u0437\u044B, \u0442\u0443\u0440\u044B, \u0430\u0432\u0442\u043E\u0431\u0443\u0441\u043D\u044B\u0435 \u0442\u0443\u0440\u044B, \u0448\u0435\u043D\u0433\u0435\u043D\u0441\u043A\u0430\u044F \u0432\u0438\u0437\u0430 \u0432 \u0441\u044B\u043A\u0442\u044B\u0432\u043A\u0430\u0440\u0435, \u0432\u0438\u0437\u043E\u0432\u044B\u0439 \u0446\u0435\u043D\u0442\u0440 \u0441\u044B\u043A\u0442\u044B\u0432\u043A\u0430\u0440, \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u0432\u0438\u0437\u0443, \u0432\u0438\u0437\u044B \u0431\u044B\u0441\u0442\u0440\u043E",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 52
@@ -28260,32 +28260,32 @@ function (_App) {
         href: "".concat(Object(_shared_utils__WEBPACK_IMPORTED_MODULE_12__["getAssetsPrefix"])(), "/static/images/favicon.ico"),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 56
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(GlobalStyle, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 62
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(styled_components__WEBPACK_IMPORTED_MODULE_10__["ThemeProvider"], {
         theme: theme,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 63
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_13__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 64
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 65
         },
         __self: this
       })))));

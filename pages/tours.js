@@ -6,14 +6,8 @@ const Tours = () => {
 
   return (
     <TourTransContainer>
-      <div
-        className="ttv-hottours"
-        data-catalog-url="http://localhost:3000/toursList"
-      />
-      <div
-        className="ttv-search"
-        data-catalog-url="http://localhost:3000/toursList"
-      />
+      <div className="ttv-hottours" data-catalog-url="/toursList" />
+      <div className="ttv-search" data-catalog-url="/toursList" />
     </TourTransContainer>
   );
 };

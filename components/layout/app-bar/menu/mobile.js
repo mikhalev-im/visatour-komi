@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { FaBars } from "react-icons/fa";
 
 import { Item, List } from "./shared";
-import { useComponentVisible } from "./effects";
+import useComponentVisible from "../../../../effects/useComponentVisible";
 
 const ListMobile = styled(List)`
   justify-content: space-between;
@@ -40,6 +40,7 @@ const HiddenMenu = styled.div`
   padding-top: 10px;
   background-color: ${props => props.theme.colors.orange};
   box-shadow: -5px 0 5px rgba(69, 90, 100, 0.5);
+  z-index: 15;
 
   a {
     color: ${props => props.theme.colors.white};

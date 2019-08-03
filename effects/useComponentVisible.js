@@ -1,6 +1,6 @@
-import React, { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 
-export const useComponentVisible = initialValue => {
+const useComponentVisible = initialValue => {
   const [isVisible, setIsVisible] = useState(initialValue);
   const ref = useRef(null);
 
@@ -22,3 +22,5 @@ export const useComponentVisible = initialValue => {
 
   return { ref, isVisible, setIsVisible };
 };
+
+export default useComponentVisible;

@@ -252,51 +252,6 @@ var DesktopMenu = function DesktopMenu(_ref) {
 
 /***/ }),
 
-/***/ "./components/layout/app-bar/menu/effects.js":
-/*!***************************************************!*\
-  !*** ./components/layout/app-bar/menu/effects.js ***!
-  \***************************************************/
-/*! exports provided: useComponentVisible */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useComponentVisible", function() { return useComponentVisible; });
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-
-
-var useComponentVisible = function useComponentVisible(initialValue) {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(initialValue),
-      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
-      isVisible = _useState2[0],
-      setIsVisible = _useState2[1];
-
-  var ref = Object(react__WEBPACK_IMPORTED_MODULE_1__["useRef"])(null);
-
-  var handleClickOutside = function handleClickOutside(event) {
-    if (ref.current && !ref.current.contains(event.target)) {
-      setIsVisible(false);
-    }
-  };
-
-  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
-    if (typeof document === "undefined") return;
-    document.addEventListener("click", handleClickOutside, true);
-    return function () {
-      document.removeEventListener("click", handleClickOutside, true);
-    };
-  }, []);
-  return {
-    ref: ref,
-    isVisible: isVisible,
-    setIsVisible: setIsVisible
-  };
-};
-
-/***/ }),
-
 /***/ "./components/layout/app-bar/menu/index.js":
 /*!*************************************************!*\
   !*** ./components/layout/app-bar/menu/index.js ***!
@@ -326,16 +281,16 @@ var Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].nav.with
 });
 var menu = [{
   title: "Визы",
-  link: "#continents"
+  link: "/#continents"
 }, {
-  title: "Автобусные туры",
-  link: "#continents"
+  title: "Туры",
+  link: "/#tours"
 }, {
   title: "Авиабилеты",
-  link: "#continents"
+  link: "/#continents"
 }, {
   title: "Контакты",
-  link: "#footer"
+  link: "/#footer"
 }];
 
 var Menu = function Menu() {
@@ -381,7 +336,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-icons/fa */ "./node_modules/react-icons/fa/index.esm.js");
 /* harmony import */ var _shared__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./shared */ "./components/layout/app-bar/menu/shared.js");
-/* harmony import */ var _effects__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./effects */ "./components/layout/app-bar/menu/effects.js");
+/* harmony import */ var _effects_useComponentVisible__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../effects/useComponentVisible */ "./effects/useComponentVisible.js");
 
 var _jsxFileName = "F:\\web\\JS\\visa-sykt\\components\\layout\\app-bar\\menu\\mobile.js";
 
@@ -408,7 +363,7 @@ var MenuBtn = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].li.withC
 var HiddenMenu = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "mobile__HiddenMenu",
   componentId: "sc-1ogul98-2"
-})(["position:fixed;width:200px;top:0;right:0;height:100%;transition:0.5s;padding-top:10px;background-color:", ";box-shadow:-5px 0 5px rgba(69,90,100,0.5);a{color:", ";text-decoration:none;}"], function (props) {
+})(["position:fixed;width:200px;top:0;right:0;height:100%;transition:0.5s;padding-top:10px;background-color:", ";box-shadow:-5px 0 5px rgba(69,90,100,0.5);z-index:15;a{color:", ";text-decoration:none;}"], function (props) {
   return props.theme.colors.orange;
 }, function (props) {
   return props.theme.colors.white;
@@ -421,7 +376,7 @@ var HiddenItem = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.w
 var MobileMenu = function MobileMenu(_ref) {
   var items = _ref.items;
 
-  var _useComponentVisible = Object(_effects__WEBPACK_IMPORTED_MODULE_5__["useComponentVisible"])(false),
+  var _useComponentVisible = Object(_effects_useComponentVisible__WEBPACK_IMPORTED_MODULE_5__["default"])(false),
       ref = _useComponentVisible.ref,
       isVisible = _useComponentVisible.isVisible,
       setIsVisible = _useComponentVisible.setIsVisible;
@@ -433,27 +388,27 @@ var MobileMenu = function MobileMenu(_ref) {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ListMobile, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 61
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared__WEBPACK_IMPORTED_MODULE_4__["Item"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 62
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     href: first.link,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 63
     },
     __self: this
   }, first.title)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MenuBtn, {
     ref: ref,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 65
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_3__["FaBars"], {
@@ -464,7 +419,7 @@ var MobileMenu = function MobileMenu(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 66
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(HiddenMenu, {
@@ -473,7 +428,7 @@ var MobileMenu = function MobileMenu(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 67
     },
     __self: this
   }, rest.map(function (item) {
@@ -481,14 +436,14 @@ var MobileMenu = function MobileMenu(_ref) {
       key: item.title,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 68
+        lineNumber: 69
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
       href: item.link,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 69
+        lineNumber: 70
       },
       __self: this
     }, item.title));
@@ -701,38 +656,38 @@ var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].header
 var Logo = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].a.withConfig({
   displayName: "header__Logo",
   componentId: "sc-1eqpxt8-2"
-})(["display:block;background-size:cover;background-image:url(", "/static/images/logo.jpg);background-position:center;width:96px;height:96px;"], Object(_shared_utils__WEBPACK_IMPORTED_MODULE_3__["getAssetsPrefix"])());
+})(["display:block;background-size:cover;background-image:url(", "/static/images/logo.jpg);background-position:center;width:96px;height:96px;cursor:pointer;"], Object(_shared_utils__WEBPACK_IMPORTED_MODULE_3__["getAssetsPrefix"])());
 
 var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Wrapper, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 43
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 44
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 45
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Logo, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 46
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_bar__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 48
     },
     __self: this
   })));
@@ -1093,7 +1048,7 @@ __webpack_require__.r(__webpack_exports__);
 /*!******************************!*\
   !*** ./components/styled.js ***!
   \******************************/
-/*! exports provided: Section, Container, Title, PulseBtn */
+/*! exports provided: Section, Container, Title, PulseBtn, TourTransContainer */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1102,6 +1057,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Container", function() { return Container; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Title", function() { return Title; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PulseBtn", function() { return PulseBtn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TourTransContainer", function() { return TourTransContainer; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
@@ -1137,6 +1093,57 @@ var PulseBtn = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].button.
 }, function (props) {
   return props.theme.colors.darkOrange;
 });
+var TourTransContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "styled__TourTransContainer",
+  componentId: "sc-1ji51nh-4"
+})(["max-width:1020px;margin:0 auto;padding:20px 0;.ttv-hottours{margin-bottom:50px;}"]);
+
+/***/ }),
+
+/***/ "./effects/useComponentVisible.js":
+/*!****************************************!*\
+  !*** ./effects/useComponentVisible.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+var useComponentVisible = function useComponentVisible(initialValue) {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(initialValue),
+      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
+      isVisible = _useState2[0],
+      setIsVisible = _useState2[1];
+
+  var ref = Object(react__WEBPACK_IMPORTED_MODULE_1__["useRef"])(null);
+
+  var handleClickOutside = function handleClickOutside(event) {
+    if (ref.current && !ref.current.contains(event.target)) {
+      setIsVisible(false);
+    }
+  };
+
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+    if (typeof document === "undefined") return;
+    document.addEventListener("click", handleClickOutside, true);
+    return function () {
+      document.removeEventListener("click", handleClickOutside, true);
+    };
+  }, []);
+  return {
+    ref: ref,
+    isVisible: isVisible,
+    setIsVisible: setIsVisible
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (useComponentVisible);
 
 /***/ }),
 

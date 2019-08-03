@@ -48,7 +48,7 @@ const Title = styled(BaseTitle)`
   @media (min-width: ${props => props.theme.breakpoints.sm}) {
     text-align: left;
   }
-`;
+`.withComponent("h1");
 
 const Input = styled.input`
   padding: 25px 10px;

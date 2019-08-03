@@ -48,7 +48,7 @@ var Title = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["default"])(_c
   return props.theme.colors.white;
 }, function (props) {
   return props.theme.breakpoints.sm;
-});
+}).withComponent("h1");
 var Input = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].input.withConfig({
   displayName: "cover__Input",
   componentId: "sc-7fa62t-3"
@@ -141,4 +141,4 @@ var Cover = function Cover() {
 /***/ })
 
 })
-//# sourceMappingURL=index.js.8c431bc566a9d9052eac.hot-update.js.map
+//# sourceMappingURL=index.js.7ffa76a697ec1c65525f.hot-update.js.map

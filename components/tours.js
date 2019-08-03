@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import Link from "next/link";
 
-import { useModalContext } from "./layout/modal";
 import { getAssetsPrefix } from "../shared/utils";
 import { Section as BaseSection, Title as BaseTitle, PulseBtn } from "./styled";
 
@@ -41,12 +41,12 @@ const Button = styled(PulseBtn)`
 `;
 
 const Tours = () => {
-  const [_, setModalState] = useModalContext();
-
   return (
     <Section id="tours">
       <Title>Автобусные и авиатуры</Title>
-      <Button onClick={() => setModalState("FORM")}>Оставить заявку</Button>
+      <Link href="/tours">
+        <Button>Подобрать тур</Button>
+      </Link>
       <Overlay />
     </Section>
   );

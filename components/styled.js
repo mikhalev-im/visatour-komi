@@ -54,3 +54,13 @@ export const PulseBtn = styled.button`
     }
   }
 `;
+
+export const TourTransContainer = styled.div`
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 20px 0;
+
+  .ttv-hottours {
+    margin-bottom: 50px;
+  }
+`;

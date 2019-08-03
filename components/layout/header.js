@@ -35,6 +35,7 @@ const Logo = styled.a`
   background-position: center;
   width: 96px;
   height: 96px;
+  cursor: pointer;
 `;
 
 const Header = () => {

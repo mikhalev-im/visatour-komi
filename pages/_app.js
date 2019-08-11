@@ -1,4 +1,5 @@
 import React from "react";
+import VK, { CommunityMessages } from "react-vk";
 import App, { Container } from "next/app";
 import Router from "next/router";
 import Head from "next/head";
@@ -82,6 +83,9 @@ class MyApp extends App {
         <ThemeProvider theme={theme}>
           <Layout>
             <Component {...pageProps} />
+            <VK>
+              <CommunityMessages groupId={"168595754"} />
+            </VK>
           </Layout>
         </ThemeProvider>
       </Container>

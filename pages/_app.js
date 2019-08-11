@@ -1,10 +1,12 @@
 import React from "react";
 import App, { Container } from "next/app";
+import Router from "next/router";
 import Head from "next/head";
 import { ThemeProvider, createGlobalStyle } from "styled-components";
 import { normalize } from "styled-normalize";
 
 import { getAssetsPrefix } from "../shared/utils";
+import { GA_TRACKING_ID, pageview } from "../shared/gtag";
 import Layout from "../components/layout";
 
 const theme = {
@@ -37,6 +39,8 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+Router.events.on("routeChangeComplete", url => pageview(url));
+
 class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
@@ -57,6 +61,21 @@ class MyApp extends App {
             rel="shortcut icon"
             type="image/x-icon"
             href={`${getAssetsPrefix()}/static/images/favicon.ico`}
+          />
+          {/* Global Site Tag (gtag.js) - Google Analytics */}
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}');
+          `
+            }}
           />
         </Head>
         <GlobalStyle />

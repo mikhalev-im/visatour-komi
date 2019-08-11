@@ -38,11 +38,6 @@ const SocialBtns = styled.div`
 
   a {
     display: block;
-    background-size: cover;
-    background-image: url(${getAssetsPrefix()}/static/images/logo.png);
-    background-position: center;
-    width: 74px;
-    height: 100px;
   }
 `;
 
@@ -52,16 +47,35 @@ const Map = styled.iframe`
   }
 `;
 
+const ContactLink = styled.a`
+  color: ${props => props.theme.colors.white};
+  text-decoration: none;
+`;
+
 const Footer = () => {
   return (
     <Section height="auto" id="footer">
-      <Container>
+      <Container itemScope itemType="https://schema.org/TravelAgency">
         <SocialBtns>
-          <a />
+          <a href="/">
+            <img
+              src={`${getAssetsPrefix()}/static/images/logo.png`}
+              itemProp="image"
+              alt="Визовый туристический центр"
+            />
+          </a>
         </SocialBtns>
         <Contacts>
           <h3>Наши контакты:</h3>
-          <p>Адрес: г. Сыктывкар, ул. Орджоникидзе 16</p>
+          <p itemProp="name">Визовый туристический центр</p>
+          <p
+            itemProp="address"
+            itemScope
+            itemType="http://schema.org/PostalAddress"
+          >
+            Адрес: г. <span itemProp="addressLocality">Сыктывкар</span>,{" "}
+            <span itemProp="streetAddress">ул. Орджоникидзе 16</span>
+          </p>
           <p>
             Режим работы:
             <br />
@@ -69,8 +83,18 @@ const Footer = () => {
             <br />
             Сб: 11:00 - 15:00
           </p>
-          <p>Телефон: +7 (8212) 23-93-05</p>
-          <p>Электронная почта: info@visatour-komi.ru</p>
+          <p>
+            Телефон:{" "}
+            <ContactLink href="tel:+78212239305">
+              <span itemProp="telephone">+7 (8212) 23-93-05</span>
+            </ContactLink>
+          </p>
+          <p>
+            Электронная почта:{" "}
+            <ContactLink href="mailto:info@visatour-komi.ru">
+              <span itemProp="email">info@visatour-komi.ru</span>
+            </ContactLink>
+          </p>
         </Contacts>
         <Map
           src="https://yandex.ru/map-widget/v1/?um=constructor%3Acbf9d71c7e0c8772032d5f972f82b9e7da2021226e580d9635e5589b58b677ab&amp;source=constructor"

@@ -22,7 +22,7 @@ const items = [
     bgPosition: "-455px 0"
   },
   {
-    caption: "Страхование путешествинников",
+    caption: "Страхование путешественников",
     bgPosition: "-605px 0"
   }
 ];

@@ -91,7 +91,7 @@ const VisaMap = () => {
             <AustraliaImg />
           </Continent>
         </Wrapper>
-        <p>Выберите континет для более подробной инфомрации</p>
+        <p>Выберите континент для более подробной информации</p>
       </Container>
     </Section>
   );

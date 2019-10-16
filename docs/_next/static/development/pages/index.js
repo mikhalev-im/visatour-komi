@@ -146,10 +146,13 @@ var _jsxFileName = "F:\\web\\JS\\visa-sykt\\components\\biometrics.js";
 
 
 var dates = [{
-  countries: ["Финляндия", "Чехия", "Литва", "Словения", "Дания", "Исландия"],
-  dates: ["27 августа", "17 сентября"]
+  countries: ["Финляндия", "Австрия", "Чехия", "Литва", "Словения", "Дания", "Исландия"],
+  dates: ["18 ноября", "4 декабря"]
 }, {
-  countries: ["Латвия"],
+  countries: ["Испания"],
+  dates: ["15 ноября"]
+}, {
+  countries: ["Латвия", "Венгрия"],
   dates: ["в любой будний день!"]
 }];
 var Section = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
@@ -207,44 +210,44 @@ var Biometrics = function Biometrics() {
     id: "biometrics",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 102
+      lineNumber: 114
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TextSection, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 115
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(FingerPrintImg, {
     src: "".concat(Object(_shared_utils__WEBPACK_IMPORTED_MODULE_4__["getAssetsPrefix"])(), "/static/images/fingerprint.png"),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104
+      lineNumber: 116
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(WaveStyled, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107
+      lineNumber: 119
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TextWrapper, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108
+      lineNumber: 120
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Title, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
+      lineNumber: 121
     },
     __self: this
   }, "\u041C\u043E\u0431\u0438\u043B\u044C\u043D\u0430\u044F \u0431\u0438\u043E\u043C\u0435\u0442\u0440\u0438\u044F \u0432 \u0421\u044B\u043A\u0442\u044B\u0432\u043A\u0430\u0440\u0435"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(List, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110
+      lineNumber: 122
     },
     __self: this
   }, dates.map(function (item) {
@@ -252,19 +255,19 @@ var Biometrics = function Biometrics() {
       key: item.countries.join(),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 112
+        lineNumber: 124
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("b", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 113
+        lineNumber: 125
       },
       __self: this
     }, item.countries.join(", "), ":"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 114
+        lineNumber: 126
       },
       __self: this
     }), item.dates.join(", "));
@@ -274,7 +277,7 @@ var Biometrics = function Biometrics() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119
+      lineNumber: 131
     },
     __self: this
   }, "\u041E\u0441\u0442\u0430\u0432\u0438\u0442\u044C \u0437\u0430\u044F\u0432\u043A\u0443"))));
@@ -441,7 +444,7 @@ var VisaMap = function VisaMap() {
       lineNumber: 94
     },
     __self: this
-  }, "\u0412\u044B\u0431\u0435\u0440\u0438\u0442\u0435 \u043A\u043E\u043D\u0442\u0438\u043D\u0435\u0442 \u0434\u043B\u044F \u0431\u043E\u043B\u0435\u0435 \u043F\u043E\u0434\u0440\u043E\u0431\u043D\u043E\u0439 \u0438\u043D\u0444\u043E\u043C\u0440\u0430\u0446\u0438\u0438")));
+  }, "\u0412\u044B\u0431\u0435\u0440\u0438\u0442\u0435 \u043A\u043E\u043D\u0442\u0438\u043D\u0435\u043D\u0442 \u0434\u043B\u044F \u0431\u043E\u043B\u0435\u0435 \u043F\u043E\u0434\u0440\u043E\u0431\u043D\u043E\u0439 \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u0438")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (VisaMap);
@@ -908,7 +911,7 @@ var items = [{
   caption: "Бронирование отелей",
   bgPosition: "-455px 0"
 }, {
-  caption: "Страхование путешествинников",
+  caption: "Страхование путешественников",
   bgPosition: "-605px 0"
 }];
 var Title = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(_styled__WEBPACK_IMPORTED_MODULE_3__["Title"]).withConfig({

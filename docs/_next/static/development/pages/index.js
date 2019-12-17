@@ -147,7 +147,7 @@ var _jsxFileName = "F:\\web\\JS\\visa-sykt\\components\\biometrics.js";
 
 var dates = [{
   countries: ["Финляндия", "Австрия", "Чехия", "Литва", "Словения", "Дания", "Исландия"],
-  dates: ["4 декабря"]
+  dates: ["28 января"]
 }, {
   countries: ["Латвия", "Венгрия"],
   dates: ["в любой будний день!"]
